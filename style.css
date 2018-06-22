@@ -23,6 +23,97 @@ img {
 	max-width: 100%; height: auto; 
 }
 
+footer{
+  position: relative;
+  width: 100%;
+}
+
+A:link {
+  text-decoration: none;
+  font-family: "yoon";
+  font-color: #3a3434;}
+
+A:link    {color:#3a3434;text-decoration:none;} /* 아직 방문하지 않은경우 */
+A:visited {color:#3a3434; text-decoration:none; } /* 한번 이상 방문한 링크 처리 */
+A:active  {color:#3a3434; text-decoration:none; }/* 마우스로 클릭하는 순간 */
+A:hover  {color:#3a3434; text-decoration:none; } /* 마우스 링크 위 올려 놓았을때 */
+
+.bottom {
+  position: relative;
+  background-color: rgba(58,52,52,0.5);
+  height: 200px; width: 100%;
+}
+
+.p{
+  float: left;
+  position: relative;
+  /*background-color: red;*/
+  font-family: "hel"; font-size: 1.5em;
+  color: #3a3434;
+  top: 50px; left: 230px;
+  width: 100px;
+}
+#p{
+  position: absolute;
+  /*background-color: red;*/
+  font-family: "yoon"; font-size: 0.6em;
+  color: #3a3434;
+  top: 50px; left: 0px;
+  width: 300px;
+  line-height: 1.9em;
+}
+
+.p1{
+  float: left;
+  position: relative;
+  /*background-color: red;*/
+  font-family: "hel"; font-size: 1.5em;
+  color: #3a3434;
+  top: 50px; left: 430px;
+  width: 100px;
+}
+
+#p1 {
+  float: left;
+  position: relative;
+  font-family: "yoon"; font-size: 0.6em;
+  color: #3a3434;
+  top: 0px; left: 150px;
+  width:50px;
+  line-height: 1.9em;
+
+}
+
+#p2{
+  float: left;
+  position: absolute;
+  font-family: "yoon"; font-size: 0.6em;
+  color: #3a3434;
+  top: 0px; left: 300px;
+  width: 400px;
+  line-height: 1.9em;
+}
+
+#p3{
+  float: left;
+  position: absolute;
+  font-family: "yoon"; font-size: 0.6em;
+  color: #3a3434;
+  top: 0px; left: 430px;
+  width: 50px;
+  line-height: 1.9em;
+}
+
+.p4{
+  float: right;
+  position: relative;
+  font-family: "hel"; font-size: 1.0em;
+  color: #3a3434;
+  right: 300px; top: 100px;
+  width: 50px;
+}
+
+
 .i {
 	position: absolute;
 	top:50%; margin-top: -115px;	
@@ -59,22 +150,21 @@ img {
 }
 
 .main ul {
-	list-style: none; 
-	float: right; 
-	padding-right: 100px;
-	 padding-top: 50px;
-	}
+  list-style: none;
+   float: right; 
+   font-family: "bodoni", serif; 
+   padding-right: 100px; padding-top: 50px;
+}
 
 .main il a {
-	font-weight: bold; 
-	font-size: 1.3em;text-decoration: none;
-	color: #3a3434; 
-	padding: 25px;
+  font-weight: bold; font-size: 1.3em;
+  text-decoration: none; 
+  font-family: "bodoni", serif; 
+  color: #3a3434; padding: 25px;
 }
 
-.main il a:hover {
-	color: #e7e3cd
-}
+.main il a:hover {color: #868370;}
+
 
 #back1{
 	background: url('./img/b4.png'); 
@@ -242,6 +332,8 @@ img {
 	src:local, url("/font/bodoni.ttf") 
 	format("truetype");
 }
+
+@font-face {font-family: "hel"; src:url("./font/hel.otf") format("opentype");}
 
 @keyframes slideInUp {
   from {
